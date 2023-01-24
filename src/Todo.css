@@ -13,11 +13,12 @@
   transition: opacity 0.4s linear;
 }
 
-.Todo.completed .Todo-task {
+.Todo-task.completed {
   opacity: 0.6;
+  text-decoration: line-through;
 }
 
-.Todo.completed .Todo-task:before {
+.Todo-task.completed :before {
   content: "";
   position: absolute;
   top: 50%;
